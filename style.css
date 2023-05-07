@@ -1,0 +1,121 @@
+/* colors */
+/* main - #4D4D4D
+display - #D0E6A8
+num - #808080
++/- - #65C7D0
+= - #E95D5E
+
+
+.parent {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(6, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+}
+
+*/
+
+@font-face {
+	font-family: DigitalNumbers;
+	src: url(./fonts/DigitalNumbers-Regular.ttf);
+}
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Orbitron', sans-serif;
+	background-color: #C5B589;
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+input {
+	width: 100%;
+	height: 20%;
+	font-size: 60px;
+	font-family: DigitalNumbers;
+	background-color: #D0E6A8;
+	border-radius: 15px;
+	text-align: end;
+	border: none;
+	color: #4D4D4D;
+}
+
+input::placeholder {
+	color: #4D4D4D;
+}
+
+.displ {
+	padding: 10px;
+	display: flex;
+	background-color: #D0E6A8;
+	height: 20%;
+	border-radius: 15px;
+	color: #4D4D4D;
+	font-size: 70px;
+	align-items: center;
+	justify-content: flex-end;
+	font-family: DigitalNumbers;
+
+}
+
+.calc-container {
+	padding: 40px;
+	background-color: #4D4D4D;
+	width: 450px;
+	height: 600px;
+	border-radius: 30px;
+	color: #ffff;
+}
+
+.btns {
+	margin-top: 30px;
+	height: 75%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-column-gap: 25px;
+	grid-row-gap: 25px;
+}
+
+button {
+	cursor: pointer;
+	font-family: 'Orbitron', sans-serif;
+	color: #ffff;
+	font-size: 50px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #808080;
+	transition: .3s ease all;
+	border: none;
+}
+
+.btn:hover {
+	transform: scale(1.05)
+}
+
+
+.eq {
+	background-color: #E95D5E;
+}
+
+.sign {
+	background-color: #65C7D0;
+}
